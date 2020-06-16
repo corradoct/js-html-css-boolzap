@@ -28,6 +28,12 @@ ul {
 .active {
   background-color: #eaeaea;
 }
+.visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
 /* FINE REGOLE GENERALI */
 
 /* REGOLE FINESTRA PRINCIPALE */
@@ -172,7 +178,6 @@ section.chat {
   bottom: -10px;
   right: -90px;
 }
-
 /* Fine regole colonna chat */
 
 /* FINE REGOLE FINESTRA PRINCIPALE */

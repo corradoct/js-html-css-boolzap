@@ -6,6 +6,7 @@
     <title>Boolzapp</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -73,13 +74,13 @@
 
                   <!-- Inizio immagine profilo contatto -->
                   <div class="avatar">
-                    <img src="img/avatar_3.jpg" alt="User avatar">
+                    <img src="img/avatar_1.jpg" alt="User avatar">
                   </div>
                   <!-- Fine immagine profilo contatto -->
 
                   <!-- Inizio dettagli contatto -->
                   <div class="details">
-                    <p>Fabio</p>
+                    <p>Michele</p>
                     <span>Non poteva essere altrimenti</span>
                   </div>
                   <!-- Fine dettagli contatto -->
@@ -294,11 +295,12 @@
 
           <!-- Inizio sezione chat -->
           <section class="chat">
-            
-            <p id="receivedMessages" class="received">eeeeeeeeeeee <span>09:00</span> </p>
-            <p id="sentMessages" class="sent">hallo <span>09:00</span> </p>
 
           </section>
+
+          <div class="template hidden">
+            <p><span>09:00</span></p>
+          </div>
           <!-- Fine sezione chat -->
 
           <!-- Inizio barra scrittura messaggio -->
@@ -313,7 +315,8 @@
             <!-- Inizio barra scrittura -->
             <div class="bar inputMessage">
               <input id="writeMessage" type="text" name="" value="" placeholder="Scrivi un messaggio">
-            </div>            <!-- Fine barra scrittura -->
+            </div>
+            <!-- Fine barra scrittura -->
 
             <!-- Inizio icona aeroplano -->
             <div id="sent" class="icons">
