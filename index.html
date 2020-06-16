@@ -68,7 +68,7 @@
           <!-- Inizio sezione lista contatti -->
           <div class="contactList">
             <ul>
-              <li data-contact=0>
+              <li data-contact=0 class="active">
                 <!-- Inizio immagine e dettagli profilo contatto -->
                 <div class="contact">
 
@@ -261,23 +261,10 @@
         <div class="col wrapperChat">
 
           <!-- Inizio barra profilo contatto selezionato -->
-          <div id="contactView" class="bar contactProfile">
+          <div class="bar contactProfile">
 
             <!-- Inizio immagine e dettagli profilo contatto selezionato -->
-            <div class="contact">
-
-              <!-- Inizio immagine profilo contatto selezionato -->
-              <div class="avatar">
-                <img src="img/avatar_1.jpg" alt="User avatar">
-              </div>
-              <!-- Fine immagine profilo contatto selezionato -->
-
-              <!-- Inizio dettagli contatto selezionato -->
-              <div class="details">
-                <p>Michele</p>
-                <span>Ultimo accesso oggi alle 15:40</span>
-              </div>
-              <!-- Fine dettagli contatto selezionato -->
+            <div id="contactView" class="contact">
 
             </div>
             <!-- Fine immagine e dettagli profilo contatto selezionato -->
@@ -299,7 +286,7 @@
           </section>
 
           <div class="template hidden">
-            <p><span>09:00</span></p>
+            <p><span></span></p>
           </div>
           <!-- Fine sezione chat -->
 
@@ -336,6 +323,7 @@
     <!-- FINE WRAPPER GENERALE -->
 
     <!-- INIZIO SCRIPT -->
+    <script type="text/javascript" src="js/function.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <!-- FINE SCRIPT -->
 

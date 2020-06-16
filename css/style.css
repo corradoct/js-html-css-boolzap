@@ -16,7 +16,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-width: 900px;
 }
-ul {
+li {
   list-style: none;
 }
 .wrapper {
@@ -146,7 +146,7 @@ input {
   height: 100%;
 }
 section.chat {
-  width: 99%;
+  width: 100%;
   height: calc(100% - 200px);
   background-image: url(../img/mine.jpg);
   background-size: cover;

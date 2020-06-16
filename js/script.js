@@ -1,9 +1,29 @@
 $(document).ready(
   function() {
+
+    var ora = time();
+
+    $('.contactList .active .time span').text(ora);
+
+    $('#contactView').append(contattoAttivo(ora));
+
+    $('.contactList li').on('click',
+      function() {
+        if (!($(this).hasClass('active'))) {
+          $('.contactList li').removeClass('active');
+          $(this).addClass('active');
+          $(this).find('.time span').text(ora);
+          $('#contactView').text('');
+          $('#contactView').append(contattoAttivo(ora));
+        }
+      }
+    );
+
     $('#sent').on('click',
       function() {
         var messaggio = $('#writeMessage').val();
         inviaMessaggio(messaggio);
+        $('#contactView .details span').text('Sta scrivendo');
         setTimeout(riceviMessaggio, 3000);
       }
     );
@@ -13,27 +33,14 @@ $(document).ready(
         if (event.which === 13) {
           var messaggio = $('#writeMessage').val();
           inviaMessaggio(messaggio);
+          $('#contactView .details span').text('Sta scrivendo');
           setTimeout(riceviMessaggio, 3000);
         }
       }
     );
 
 
-    // ***********************  FUNZIONI  *********************//
-    function inviaMessaggio(messaggioDigitato) {
-      var clonePTemplate = $('.template p').clone();
-      clonePTemplate.prepend(messaggioDigitato);
-      clonePTemplate.addClass('sent');
-      $('.chat').append(clonePTemplate);
-      $('#writeMessage').val('');
-    }
 
-    function riceviMessaggio() {
-      var clonePTemplate = $('.template p').clone();
-      clonePTemplate.prepend('Ciao, chi sei?');
-      clonePTemplate.addClass('received');
-      $('.chat').append(clonePTemplate);
-    }
 
 
   }
