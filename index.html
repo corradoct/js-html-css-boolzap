@@ -60,7 +60,7 @@
 
           <!-- Inizio barra ricerca -->
           <div class="bar search">
-            <input id="search" type="text" name="" placeholder="Cerca o inizia una nuova chat">
+            <input id="searchBar" type="text" name="" placeholder="Cerca o inizia una nuova chat">
           </div>
           <!-- Fine barra ricerca -->
 
@@ -260,7 +260,7 @@
         <div class="col wrapperChat">
 
           <!-- Inizio barra profilo contatto selezionato -->
-          <div class="bar contactProfile">
+          <div id="contactView" class="bar contactProfile">
 
             <!-- Inizio immagine e dettagli profilo contatto selezionato -->
             <div class="contact">
@@ -294,6 +294,9 @@
 
           <!-- Inizio sezione chat -->
           <section class="chat">
+            
+            <p id="receivedMessages" class="received">eeeeeeeeeeee <span>09:00</span> </p>
+            <p id="sentMessages" class="sent">hallo <span>09:00</span> </p>
 
           </section>
           <!-- Fine sezione chat -->
@@ -309,11 +312,11 @@
 
             <!-- Inizio barra scrittura -->
             <div class="bar inputMessage">
-              <input id="message" type="text" name="" value="" placeholder="Scrivi un messaggio">
+              <input id="writeMessage" type="text" name="" value="" placeholder="Scrivi un messaggio">
             </div>            <!-- Fine barra scrittura -->
 
             <!-- Inizio icona aeroplano -->
-            <div class="icons">
+            <div id="sent" class="icons">
               <i class="fab fa-telegram-plane"></i>
             </div>
             <!-- Fine icona aeroplano -->
