@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;               /*DA CANCELLARE SE SI USA UN FRAMEWORK*/
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+/* FINE RESET */
+
+/* REGOLE GENERALI */
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 900px;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #009688 20%, #D7DBD7 20%);
+  position: relative;
+}
+.active {
+  background-color: #eaeaea;
+}
+/* FINE REGOLE GENERALI */
+
+/* REGOLE FINESTRA PRINCIPALE */
+.wrapperContent {
+  width: 80%;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.col {
+  float: left;
+}
+.bar {
+  width: 100%;
+  height: 100px;
+  background-color: #eaeaea;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  color: #b1b1b1;
+  font-size: 25px;
+}
+.icons i {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.details {
+  padding-left: 15px;
+}
+span {
+  font-size: 14px;
+  color: #b1b1b1;
+}
+input {
+  width: 98%;
+  height: 65%;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 3px;
+}
+
+/* Regole colonna contatti */
+.col.wrapperContact {
+  width: 350px;
+  height: 100%;
+}
+.bar.userProfile {
+  border-right: 1px solid lightgray;
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.notifications {
+  background-color: #8edafc;
+  justify-content: flex-start;
+}
+.notificationsIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.notifications i {
+  color: #8edafc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.notificationsSettings span {
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+}
+.bar.search {
+  height: 70px;
+  padding: 0;
+}
+.contactList {
+  width: 100%;
+  height: calc(100% - 270px);
+  overflow-y: auto;
+}
+.contactList ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.contactList .contact {
+  justify-content: space-around;
+}
+/* Fine regole colonna contatti */
+
+/* Regole colonna chat */
+.col.wrapperChat {
+  width: calc(100% - 350px);
+  height: 100%;
+}
+section.chat {
+  width: 99%;
+  height: calc(100% - 200px);
+  background-image: url(../img/mine.jpg);
+  background-size: cover;
+  overflow-y: auto;
+}
+.bar.inputMessage {
+  height: 100%;
+}
+
+/* Fine regole colonna chat */
+
+/* FINE REGOLE FINESTRA PRINCIPALE */
