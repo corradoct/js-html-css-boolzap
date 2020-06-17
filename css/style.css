@@ -14,7 +14,6 @@ img {
 /* REGOLE GENERALI */
 body {
   font-family: 'Roboto', sans-serif;
-  min-width: 900px;
 }
 li {
   list-style: none;
@@ -22,6 +21,7 @@ li {
 .wrapper {
   width: 100%;
   height: 100vh;
+  min-width: 900px;
   background: linear-gradient(to bottom, #009688 20%, #D7DBD7 20%);
   position: relative;
 }
@@ -51,7 +51,7 @@ li {
 }
 .bar {
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: #eaeaea;
   padding: 0 20px;
   display: flex;
@@ -100,6 +100,7 @@ input {
   cursor: pointer;
 }
 .notifications {
+  height: 80px;
   background-color: #8edafc;
   justify-content: flex-start;
 }
@@ -123,12 +124,21 @@ input {
   cursor: pointer;
 }
 .bar.search {
-  height: 70px;
+  height: 50px;
   padding: 0;
+  position: relative;
+}
+.bar.search > label {
+  position: absolute;
+  top: 17px;
+  left: 5px;
+}
+.bar.search label > i {
+  color: #b1b1b1;
 }
 .contactList {
   width: 100%;
-  height: calc(100% - 270px);
+  height: calc(100% - 200px);
   overflow-y: auto;
 }
 .contactList ul li {
@@ -147,7 +157,7 @@ input {
 }
 section.chat {
   width: 100%;
-  height: calc(100% - 200px);
+  height: calc(100% - 140px);
   background-image: url(../img/mine.jpg);
   background-size: cover;
   overflow-y: auto;
@@ -165,8 +175,10 @@ section.chat {
   padding: 15px 100px 15px 15px;
   border-radius: 5px;
   align-self: flex-start;
-  max-width: 100%;
+  max-width: 60%;
   margin-bottom: 15px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .sent {
   background-color: #d5f9ba;

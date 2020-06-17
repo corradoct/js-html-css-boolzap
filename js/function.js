@@ -20,16 +20,18 @@ function inviaMessaggio(messaggioDigitato) {
   clonePTemplate.children('span').text(time());
   clonePTemplate.addClass('sent');
   $('.chat').append(clonePTemplate);
+  $('.chat').scrollTop($('.chat').height());
   $('#writeMessage').val('');
 }
 
 function riceviMessaggio() {
   var clonePTemplate = $('.template p').clone();
-  var message = ('Ciao, chi sei?');
+  var message = ('Ok');
   clonePTemplate.prepend(message);
   clonePTemplate.children('span').text(time());
   clonePTemplate.addClass('received');
   $('.chat').append(clonePTemplate);
+  $('.chat').scrollTop($('.chat').height());
   $('#contactView .details span').text('Ultimo accesso oggi alle ' + time());
 }
 

@@ -22,9 +22,11 @@ $(document).ready(
     $('#sent').on('click',
       function() {
         var messaggio = $('#writeMessage').val();
-        inviaMessaggio(messaggio);
-        $('#contactView .details span').text('Sta scrivendo');
-        setTimeout(riceviMessaggio, 3000);
+        if (messaggio != '') {
+          inviaMessaggio(messaggio);
+          $('#contactView .details span').text('Sta scrivendo');
+          setTimeout(riceviMessaggio, 1000);
+        }
       }
     );
 
@@ -32,12 +34,16 @@ $(document).ready(
       function(event) {
         if (event.which === 13) {
           var messaggio = $('#writeMessage').val();
-          inviaMessaggio(messaggio);
-          $('#contactView .details span').text('Sta scrivendo');
-          setTimeout(riceviMessaggio, 3000);
+          if (messaggio != '') {
+            inviaMessaggio(messaggio);
+            $('#contactView .details span').text('Sta scrivendo');
+            setTimeout(riceviMessaggio, 3000);
+          }
         }
       }
     );
+
+    
 
 
 
