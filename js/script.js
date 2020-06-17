@@ -43,7 +43,23 @@ $(document).ready(
       }
     );
 
-    
+    $('#searchBar').keyup(
+      function() {
+        var contatti = $('.contactList li');
+        $(contatti).each(
+          function() {
+            var userSearch = $('#searchBar').val().toLowerCase();
+            var contactName = $(this).find('p').text().toLowerCase();
+            var search = contactName.includes(userSearch);
+            if (!search) {
+              $(this).addClass('hidden');
+            } else {
+              $(this).removeClass('hidden');
+            }
+          }
+        );
+      }
+    );
 
 
 
