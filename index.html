@@ -283,11 +283,25 @@
 
           <!-- Inizio sezione chat -->
           <section class="chat">
-
+            <div data-chat=0 class="d-flex"></div>
+            <div data-chat=1 class="hidden"></div>
+            <div data-chat=2 class="hidden"></div>
+            <div data-chat=3 class="hidden"></div>
+            <div data-chat=4 class="hidden"></div>
+            <div data-chat=5 class="hidden"></div>
+            <div data-chat=6 class="hidden"></div>
           </section>
 
           <div class="template hidden">
-            <p><span></span></p>
+            <div class="with-dropdown">
+              <p></p>
+              <span class="time"></span>
+              <span class="arrow hidden"><i class="fas fa-chevron-down"></i></span>
+              <ul class="dropdown hidden">
+                <li>Informazioni messaggio</li>
+                <li class="delete">Cancella messaggio</li>
+              </ul>
+            </div>
           </div>
           <!-- Fine sezione chat -->
 
@@ -306,11 +320,12 @@
             </div>
             <!-- Fine barra scrittura -->
 
-            <!-- Inizio icona aeroplano -->
+            <!-- Inizio icone microfono e aeroplano -->
             <div id="sent" class="icons">
-              <i class="fab fa-telegram-plane"></i>
+              <i id="microfono" class="fas fa-microphone"></i>
+              <i id="aeroplano" class="fab fa-telegram-plane hidden"></i>
             </div>
-            <!-- Fine icona aeroplano -->
+            <!-- Fine icone microfono e aeroplano -->
           </div>
           <!-- Fine barra scrittura messaggio -->
 
